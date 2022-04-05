@@ -22,3 +22,10 @@ const uuid1ToUuid: _.Uuid = uuid1
 const uuidToUuid1: _.Uuid<1> = uuid
 // $ExpectError
 const uuid1toUuid2: _.Uuid<2> = uuid1
+
+//
+// v4
+//
+
+// $ExpectType IO<Uuid<4>>
+_.v4()

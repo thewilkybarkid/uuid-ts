@@ -1,4 +1,4 @@
 {
   "extends": "@tsconfig/recommended",
-  "include": ["./src"]
+  "include": ["./src", "./test"]
 }
