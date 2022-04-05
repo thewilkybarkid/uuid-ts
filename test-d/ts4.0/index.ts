@@ -17,3 +17,8 @@ declare const uuid6: _.Uuid<6>
 const uuidToString: string = uuid
 // $ExpectError
 const stringToUuid: _.Uuid = 'foo'
+const uuid1ToUuid: _.Uuid = uuid1
+// $ExpectError
+const uuidToUuid1: _.Uuid<1> = uuid
+// $ExpectError
+const uuid1toUuid2: _.Uuid<2> = uuid1
