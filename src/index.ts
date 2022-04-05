@@ -2,8 +2,8 @@
  * @since 0.1.0
  */
 import * as I from 'fp-ts/IO'
+import { Refinement } from 'fp-ts/Refinement'
 import * as uuid from 'uuid'
-
 import IO = I.IO
 
 // -------------------------------------------------------------------------------------
@@ -34,3 +34,13 @@ interface UuidBrand<V extends UuidVersion> {
 export function v4(): IO<Uuid<4>> {
   return () => uuid.v4() as Uuid<4>
 }
+
+// -------------------------------------------------------------------------------------
+// refinements
+// -------------------------------------------------------------------------------------
+
+/**
+ * @category refinements
+ * @since 0.1.0
+ */
+export const isUuid: Refinement<unknown, Uuid> = (u): u is Uuid => typeof u === 'string' && uuid.validate(u)

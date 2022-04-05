@@ -16,6 +16,8 @@ Added in v0.1.0
   - [v4](#v4)
 - [model](#model)
   - [Uuid (type alias)](#uuid-type-alias)
+- [refinements](#refinements)
+  - [isUuid](#isuuid)
 
 ---
 
@@ -39,6 +41,18 @@ Added in v0.1.0
 
 ```ts
 export type Uuid<V extends UuidVersion = UuidVersion> = string & UuidBrand<V>
+```
+
+Added in v0.1.0
+
+# refinements
+
+## isUuid
+
+**Signature**
+
+```ts
+export declare const isUuid: Refinement<unknown, Uuid<UuidVersion>>
 ```
 
 Added in v0.1.0

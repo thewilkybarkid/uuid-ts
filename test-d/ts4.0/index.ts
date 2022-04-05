@@ -1,5 +1,8 @@
+import { pipe } from 'fp-ts/function'
+import * as O from 'fp-ts/Option'
 import * as _ from '../../src'
 
+declare const unknown: unknown
 declare const uuid: _.Uuid
 
 //
@@ -29,3 +32,10 @@ const uuid1toUuid2: _.Uuid<2> = uuid1
 
 // $ExpectType IO<Uuid<4>>
 _.v4()
+
+//
+// isUuid
+//
+
+// $ExpectType Option<Uuid<UuidVersion>>
+pipe(unknown, O.fromPredicate(_.isUuid))
