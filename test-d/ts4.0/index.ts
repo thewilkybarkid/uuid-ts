@@ -1,5 +1,5 @@
-import { pipe } from 'fp-ts/function'
 import * as O from 'fp-ts/Option'
+import { pipe } from 'fp-ts/function'
 import * as _ from '../../src'
 
 declare const unknown: unknown
