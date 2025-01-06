@@ -31,6 +31,13 @@ expectTypeOf(uuid).not.toMatchTypeOf(uuid1)
 expectTypeOf(uuid1).not.toMatchTypeOf(uuid2)
 
 //
+// Uuid
+//
+
+expectTypeOf(_.Uuid(string)).toMatchTypeOf<Uuid>()
+expectTypeOf(_.Uuid(uuid)).toMatchTypeOf<Uuid>()
+
+//
 // v4
 //
 

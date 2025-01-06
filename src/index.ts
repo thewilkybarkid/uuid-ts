@@ -29,6 +29,25 @@ interface UuidBrand<V extends UuidVersion> {
 // -------------------------------------------------------------------------------------
 
 /**
+ * @example
+ * import { Uuid } from 'uuid-ts'
+ *
+ * const uuid = Uuid('224d8877-d59f-409f-aed0-5157df78357f')
+ *
+ * assert.deepStrictEqual(uuid, '224d8877-d59f-409f-aed0-5157df78357f')
+ *
+ * @category constructors
+ * @since 0.1.1
+ */
+export function Uuid(uuid: string): Uuid {
+  if (!isUuid(uuid)) {
+    throw new Error('Not a UUID')
+  }
+
+  return uuid
+}
+
+/**
  * @category constructors
  * @since 0.1.0
  */

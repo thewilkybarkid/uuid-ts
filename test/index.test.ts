@@ -4,6 +4,24 @@ import * as _ from '../src'
 
 describe('uuid-ts', () => {
   describe('constructors', () => {
+    describe('Uuid', () => {
+      test('with an UUID', () => {
+        fc.assert(
+          fc.property(fc.uuid(), uuid => {
+            expect(_.Uuid(uuid)).toStrictEqual(uuid)
+          }),
+        )
+      })
+
+      test('with a non-UUID', () => {
+        fc.assert(
+          fc.property(fc.anything(), value => {
+            expect(() => _.Uuid(value as string)).toThrow(new Error('Not a UUID'))
+          }),
+        )
+      })
+    })
+
     describe('v4', () => {
       test('generates a v4 UUID', () => {
         const uuid = _.v4()()

@@ -13,6 +13,7 @@ Added in v0.1.0
 <h2 class="text-delta">Table of contents</h2>
 
 - [constructors](#constructors)
+  - [Uuid](#uuid)
   - [v4](#v4)
 - [model](#model)
   - [Uuid (type alias)](#uuid-type-alias)
@@ -22,6 +23,26 @@ Added in v0.1.0
 ---
 
 # constructors
+
+## Uuid
+
+**Signature**
+
+```ts
+export declare function Uuid(uuid: string): Uuid
+```
+
+**Example**
+
+```ts
+import { Uuid } from 'uuid-ts'
+
+const uuid = Uuid('224d8877-d59f-409f-aed0-5157df78357f')
+
+assert.deepStrictEqual(uuid, '224d8877-d59f-409f-aed0-5157df78357f')
+```
+
+Added in v0.1.1
 
 ## v4
 
