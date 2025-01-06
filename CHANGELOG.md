@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.1](https://github.com/thewilkybarkid/uuid-ts/compare/v0.1.0...v0.1.1) (2025-01-06)
+
+
+### Features
+
+* add a constructor ([8bb8a6f](https://github.com/thewilkybarkid/uuid-ts/commit/8bb8a6fc8472f84fd349d6bdfbddaf93437beddf))
+
 ## 0.1.0 (2022-04-05)
 
 

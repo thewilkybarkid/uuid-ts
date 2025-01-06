@@ -1,7 +1,7 @@
 {
   "name": "uuid-ts",
   "description": "A UUID library for use with fp-ts.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "homepage": "https://github.com/thewilkybarkid/uuid-ts",
   "repository": "github:thewilkybarkid/uuid-ts",
