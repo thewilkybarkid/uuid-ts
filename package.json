@@ -10,7 +10,7 @@
   "types": "dist/index.d.ts",
   "sideEffects": false,
   "dependencies": {
-    "uuid": "^8.3.2"
+    "uuid": "^11.1.0"
   },
   "peerDependencies": {
     "fp-ts": "^2.11.0"

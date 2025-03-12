@@ -21,8 +21,11 @@ declare const uuid2: Uuid<2>
 declare const uuid3: Uuid<3>
 declare const uuid4: Uuid<4>
 declare const uuid5: Uuid<5>
-// @ts-expect-error
 declare const uuid6: Uuid<6>
+declare const uuid7: Uuid<7>
+declare const uuid8: Uuid<8>
+// @ts-expect-error
+declare const uuid9: Uuid<9>
 
 expectTypeOf(uuid).toMatchTypeOf(string)
 expectTypeOf(string).not.toMatchTypeOf(uuid)
