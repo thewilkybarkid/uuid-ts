@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.3](https://github.com/thewilkybarkid/uuid-ts/compare/v0.1.2...v0.1.3) (2025-03-12)
+
+
+### Features
+
+* support v6 to v8 ([2d50a39](https://github.com/thewilkybarkid/uuid-ts/commit/2d50a396396fbd27b5cd5c49033ff25e7f41c3c2))
+
 ### [0.1.2](https://github.com/thewilkybarkid/uuid-ts/compare/v0.1.1...v0.1.2) (2025-01-06)
 
 ### [0.1.1](https://github.com/thewilkybarkid/uuid-ts/compare/v0.1.0...v0.1.1) (2025-01-06)
